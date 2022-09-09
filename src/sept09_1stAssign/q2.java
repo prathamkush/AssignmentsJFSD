@@ -10,22 +10,23 @@ of Strings until the elements are in ascending order, as determined by the compa
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Random;
 
 public class q2 {
-
-
-
     public static void main(String[] args) {
         ArrayList<String> list1 = new ArrayList<String>(Arrays.asList("def", "ghi", "abc"));
         ArrayList<String> list2 = new ArrayList<>(list1);
         Collections.sort(list2);
+        System.out.println("Initial List : ");
         System.out.println(list1);
 
-        while(list1 != list2){
-            //Collections.sort(persons, (o1,o2) -> o1.getCountry().compareTo(o2.getCountry()));
+
+        while(! q1.areTwoStringsEqual(list1,list2)){
+
             Collections.shuffle(list1);
 
         }
+        System.out.println("After shuffle sorting : ");
         System.out.println(list1);
     }
 

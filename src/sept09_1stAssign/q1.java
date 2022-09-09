@@ -32,11 +32,6 @@ public class q1 {
             return true;
         }
     }
-
-
-
-
-
     public static void main(String[] args) {
             ArrayList<String> l1 = new ArrayList<String>(Arrays.asList("abc", "def", "ghi"));
             ArrayList<String> l2 = new ArrayList<String>(Arrays.asList("abc", "def", "ghi"));
